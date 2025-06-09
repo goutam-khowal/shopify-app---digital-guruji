@@ -2,8 +2,7 @@
   "name": "promotional-banner",
   "private": true,
   "scripts": {
-    "build": "remix vite build",
-    "vercel-build": "npm run build",
+    "build": "remix build",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
