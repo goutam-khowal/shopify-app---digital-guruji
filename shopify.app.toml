@@ -3,7 +3,7 @@
 client_id = "3947eee5746218db0c772b0365c74b49"
 name = "promotional-banner"
 handle = "promotional-banner-11"
-application_url = "https://nightlife-lexmark-norway-clusters.trycloudflare.com"
+application_url = "https://presence-roots-loop-pockets.trycloudflare.com"
 embedded = true
 
 [build]
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://nightlife-lexmark-norway-clusters.trycloudflare.com/auth/callback",
-  "https://nightlife-lexmark-norway-clusters.trycloudflare.com/auth/shopify/callback",
-  "https://nightlife-lexmark-norway-clusters.trycloudflare.com/api/auth/callback"
+  "https://presence-roots-loop-pockets.trycloudflare.com/auth/callback",
+  "https://presence-roots-loop-pockets.trycloudflare.com/auth/shopify/callback",
+  "https://presence-roots-loop-pockets.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

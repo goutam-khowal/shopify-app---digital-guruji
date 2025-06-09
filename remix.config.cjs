@@ -1,14 +1,14 @@
-import remixVite from "remix-vite"; // 👈 default import
-const { vercelPreset } = remixVite; // 👈 destructure
+const remixDev = require("@remix-run/dev");
+const { defineConfig } = remixDev;
 
-/** @type {import('@remix-run/dev').AppConfig} */
 const config = {
+  serverBuildTarget: "vercel",
   ignoredRouteFiles: ["**/.*"],
   appDirectory: "app",
   serverModuleFormat: "cjs",
   dev: { port: process.env.HMR_SERVER_PORT || 8002 },
+  rootDirectory: ".",
   future: {},
-  ...vercelPreset(),
 };
 
 if (
@@ -20,4 +20,4 @@ if (
   delete process.env.HOST;
 }
 
-export default config;
+module.exports = config;
