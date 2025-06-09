@@ -1,0 +1,49 @@
+{% if block.settings.show_banner %}
+<style>
+.promotional-banner {
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  animation: pulse 3s infinite;
+  width: 100%;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+</style>
+
+<div class="promotional-banner">
+  {{ block.settings.banner_text }}
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Promotional Banner",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "banner_text",
+      "label": "Banner Text",
+      "default": "🎉 Free Shipping on All Orders! 🎉"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_banner",
+      "label": "Show Banner",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

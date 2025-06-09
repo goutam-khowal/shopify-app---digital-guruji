@@ -1,0 +1,11 @@
+name = "promo-banner-theme"
+type = "theme"
+
+[capabilities]
+block_templates = true
+app_blocks = true
+
+[extension_points]
+
+[[extension_points.target]]
+target = "header"
