@@ -1,4 +1,5 @@
-import { vercelPreset } from "remix-vite";
+import remixVite from "remix-vite"; // 👈 default import
+const { vercelPreset } = remixVite; // 👈 destructure
 
 /** @type {import('@remix-run/dev').AppConfig} */
 const config = {
